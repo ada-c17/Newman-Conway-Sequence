@@ -29,6 +29,25 @@ def test_newman_conway_for_base_cases():
     assert answer == "1 1"        
 
 
+def test_newman_conway_for_4():
+    # Arrange
+    input = 4
+
+    # Act
+    answer = newman_conway(input)
+
+    # Assert
+    assert answer == "1 1 2 2"
+
+def test_newman_conway_for_negative_number():
+    # Arrange
+    input = -1
+
+    # Act-Assert
+    with pytest.raises(ValueError):
+        newman_conway(input)
+
+
 def test_newman_conway_for_13():
     # Arrange
     input = 13

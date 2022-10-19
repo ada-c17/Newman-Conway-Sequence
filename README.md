@@ -13,7 +13,7 @@ for all n > 2
 P(n) = P(P(n - 1)) + P(n - P(n - 1))
 ```
 
-Note: if the input is 0, a ValueError is raised.
+Note: if the input is 0 or less, a ValueError is raised.
 
 Given a number n then print n terms of Newman-Conway Sequence
 
