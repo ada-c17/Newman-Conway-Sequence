@@ -4,7 +4,7 @@ Dynamic programming is a strategy for developing an algorithm where each subprob
 
 ## Newman-Conway Sequence
 
-[Newman-Conway sequence] is the one which generates the following integer sequence.  1 1 2 2 3 4 4 4 5 6 7 7….. and follows below recursive formula.
+[Newman-Conway sequence](https://www.geeksforgeeks.org/newman-conway-sequence/) is the one which generates the following integer sequence.  1 1 2 2 3 4 4 4 5 6 7 7….. and follows below recursive formula.
 
 ```
 P(1) = 1
