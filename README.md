@@ -30,7 +30,7 @@ Input : 2
 Output : 1 
 
 Input : 4
-Output : 
+Output : 1 1 2 2
 
 Input : 13
 Output : 1 1 2 2 3 4 4 4 5 6 7 7 8
