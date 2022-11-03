@@ -27,7 +27,7 @@ Input : 1
 Output: 1
 
 Input : 2
-Output : 1 
+Output : 1 1
 
 Input : 4
 Output : 1 1 2 2
