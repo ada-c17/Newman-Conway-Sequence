@@ -16,11 +16,8 @@ def newman_conway(num):
         r = f[f[i - 1]] + f[i - f[i - 1]]
         f.append(r)
 
-    res = ''
+    str_f = []
     for i in range(1, len(f)):
-        if i == len(f) - 1:
-            res += str(f[i])
-            break
-        res += f'{f[i]} '
+        str_f.append(str(f[i]))
 
-    return res
+    return " ".join(str_f)
