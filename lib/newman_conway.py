@@ -9,7 +9,6 @@ def newman_conway(num):
         return "1"
     
     memo = [0, 1, 1]
-    output = "1"
 
     count = 3
     while count <= num:
