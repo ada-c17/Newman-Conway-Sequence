@@ -1,6 +1,22 @@
 def newman_conway(num):
     """ Returns a list of the Newman Conway numbers for the given value.
-        Time Complexity: ?
-        Space Complexity: ?
+        Time Complexity: O(N)
+        Space Complexity: O(N)
     """
-    pass
+    if num <= 0:
+        raise(ValueError)
+    if num == 1:
+        return '1'
+    
+    solutions = [0,1,1]
+
+    for current in range(3, num+1):
+        solutions.append(solutions[solutions[current-1]] + solutions[current - solutions[current - 1]])
+
+    return ' '.join(str(x) for x in solutions[1:])
+
+
+# P(1) = 1
+# P(2) = 1
+# for all n > 2
+# P(n) = P(P(n - 1)) + P(n - P(n - 1))
