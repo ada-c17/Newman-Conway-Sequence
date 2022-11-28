@@ -18,5 +18,4 @@ def newman_conway(num):
         digits.append(digits[digits[current - 1]] + digits[current - digits[current - 1]])
         current += 1
 
-    print(digits)
     return ' '.join([str(x) for x in digits[1:]])
