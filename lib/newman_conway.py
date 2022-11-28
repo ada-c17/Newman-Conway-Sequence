@@ -9,11 +9,9 @@ def newman_conway(num):
         return '1'
     
     solutions = [0,1,1]
-    current = 3
 
-    while current <= num:
+    for current in range(3, num+1):
         solutions.append(solutions[solutions[current-1]] + solutions[current - solutions[current - 1]])
-        current += 1
 
     return ' '.join(str(x) for x in solutions[1:])
 
