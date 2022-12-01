@@ -10,7 +10,7 @@
 /test/version_tmp/
 /tmp/
 __pycache__/
-
+.vscode/
 
 # Used by dotenv library to load environment variables.
 # .env
