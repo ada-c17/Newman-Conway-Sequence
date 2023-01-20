@@ -3,4 +3,21 @@ def newman_conway(num):
         Time Complexity: ?
         Space Complexity: ?
     """
-    pass
+    
+    if num <= 0: 
+        raise ValueError("Input cannot be 0 or less")
+
+    if num == 1:
+        return "1"
+
+    if num == 2:
+        return "1 1"
+
+    sequence = [0, 1, 1]
+
+    for i in range(3, num + 1):
+        calculate = sequence[sequence[i - 1]] + sequence[i - sequence[i - 1]]
+        sequence.append(calculate)
+
+    sequence_string = [str(i) for i in sequence[1: ]]
+    return " ".join(sequence_string)
